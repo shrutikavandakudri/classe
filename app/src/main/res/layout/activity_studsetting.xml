@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Studsetting">
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:text="Contact details"
+        android:background="@color/colorbutton"
+        android:textColor="@color/colortext" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Reset password"
+        android:background="@color/colorbutton"
+        android:textColor="@color/colortext"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

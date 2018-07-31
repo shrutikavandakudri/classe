@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Account</string>
+    <string name="title_activity_buttons">buttons</string>
+
+    <string name="app_name1">Class registration</string>
+    <string name="title_activity_buttons1">buttons</string>
+
+    <string name="app_name2">Settings</string>
+    <string name="title_activity_buttons2">buttons</string>
+
+    <string name="app_name3">Contact details</string>
+    <string name="title_activity_buttons3">buttons</string>
+
+    <string name="app_name4">Managre roles</string>
+    <string name="title_activity_buttons4">buttons</string>
+
+    <string name="app_name5">Manage user</string>
+    <string name="title_activity_buttons5">buttons</string>
+
+    <string name="app_name6">Create time table</string>
+    <string name="title_activity_buttons6">buttons</string>
+
+    <string name="app_name7">Login</string>
+    <string name="title_activity_buttons7">buttons</string>
+
+    <string name="app_name8">Signup</string>
+    <string name="title_activity_buttons8">buttons</string>
+
+    <string name="app_name9">Activity log</string>
+    <string name="title_activity_buttons9">buttons</string>
+
+    <string name="app_name10">Create time table</string>
+    <string name="title_activity_buttons10">buttons</string>
+
+    <string name="app_name11">Subjects</string>
+    <string name="title_activity_buttons11">buttons</string>
+
+    <string name="app_name12">Profile</string>
+    <string name="title_activity_buttons12">buttons</string>
+
+    <string name="app_name13">Notifications</string>
+    <string name="title_activity_buttons13">buttons</string>
+
+    <string name="app_name14">Assignments</string>
+    <string name="title_activity_buttons14">buttons</string>
+
+
+
+</resources>
+

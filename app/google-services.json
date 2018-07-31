@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "237522964367",
+    "firebase_url": "https://class-e.firebaseio.com",
+    "project_id": "class-e",
+    "storage_bucket": "class-e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237522964367:android:09f58de23f5ddee4",
+        "android_client_info": {
+          "package_name": "com.example.dell_pc.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237522964367-eeeili43ocib29076i9ibsk4iso902mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7SB8PxxjX3pgfb_Rev5QVTMg8kQuKAV0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

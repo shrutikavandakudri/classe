@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manageroles"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:padding="12dp"
+        android:hint="Assign roles :"/>
+
+<Button
+    android:layout_width="147dp"
+    android:layout_height="wrap_content"
+    android:text="Create Admin"
+    android:layout_marginTop="90dp"
+    android:textSize="18dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/colorbutton"
+    android:textColor="@color/colortext"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

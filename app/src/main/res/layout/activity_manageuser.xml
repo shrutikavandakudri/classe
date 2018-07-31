@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manageuser"
+    android:orientation="vertical">
+
+<android.support.v7.widget.CardView
+    android:layout_width="350dp"
+    android:layout_height="280dp"
+    android:layout_marginLeft="17dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="#FFF">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:width="220dp"
+        android:text="Manage students"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorbutton"
+        android:textColor="@color/colortext"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:width="220dp"
+        android:text="Update students"
+        android:textSize="18dp"
+        android:background="@color/colorbutton"
+        android:textColor="@color/colortext"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check transactions"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:width="220dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/colorbutton"
+        android:textColor="@color/colortext"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update result"
+        android:layout_gravity="center_horizontal"
+        android:width="220dp"
+        android:textSize="18dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/colorbutton"
+        android:textColor="@color/colortext"/>
+
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#FFF">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update student"
+            android:layout_gravity="center_horizontal"
+            android:width="220dp"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorbutton"
+            android:textColor="@color/colortext"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Migrate Student"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"
+            android:width="220dp"
+            android:layout_marginTop="90dp"
+            android:background="@color/colorbutton"
+            android:textColor="@color/colortext" />
+
+
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.LinearLayoutCompat>
