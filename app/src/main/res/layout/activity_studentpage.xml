@@ -1,36 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Studentpage">
-    <LinearLayout
+
+
+
+        <include layout="@layout/activity_studtoolbar"
+        android:id="@+id/customtoolbar"/>
+
+   
+   <FrameLayout android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/studframe">
+
+       <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:id="@+id/assignmentImage"
+        android:layout_marginTop="50dp"
+           android:background="@null"
+        android:src="@mipmap/ic_launcher_assignment"
 
+           android:scaleType="fitXY"/>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_action_profile"
-            android:layout_marginLeft="285dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_action_notification" />
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_action_settings"
-
-            />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="25dp"
+           android:layout_marginRight="110dp"
+           android:clickable="false"
+           android:text="Assignment">
+       </TextView>
+   </FrameLayout>
     </LinearLayout>
 
 
-</android.support.v7.widget.LinearLayoutCompat>
