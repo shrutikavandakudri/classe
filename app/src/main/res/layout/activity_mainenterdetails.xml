@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Mainenterdetails">
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/spinnerid1"
+        android:hint="select country"
+        android:layout_marginTop="10dp"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/spinnerid2"
+        android:hint="select country"
+        android:layout_marginTop="10dp"/>
+
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/spinnerid3"
+        android:hint="select country"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Area :"
+        android:id="@+id/areaid"
+        android:padding="12dp"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Landmark/Locality :"
+        android:id="@+id/landmarkid"
+        android:textSize="18dp"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/pinid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Pincode :"
+        android:padding="12dp"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:id="@+id/submitid"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colortext"
+        android:background="@color/colorbutton"/>
+
+</LinearLayout>
