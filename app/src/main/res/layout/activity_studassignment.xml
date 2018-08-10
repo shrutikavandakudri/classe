@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".Studassignment">
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/subspinner"
+        android:hint="Select subjects"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/workspaceid"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
-           android:layout_marginLeft="130dp"
-            android:text="Workspace"
-        android:textSize="18dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="300dp"
             android:background="@color/colorbutton"
-            android:textColor="@color/colortext"/>
+            android:text="Workspace"
+            android:textColor="@color/colortext"
+            android:textSize="18dp" />
 
         <Button
+            android:id="@+id/downloadid"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
             android:layout_marginLeft="10dp"
-            android:text="Download"
-            android:textSize="18dp"
+            android:layout_marginTop="300dp"
             android:background="@color/colorbutton"
-            android:textColor="@color/colortext"/>
-    </android.support.v7.widget.LinearLayoutCompat>
+            android:text="Download"
+            android:textColor="@color/colortext"
+            android:textSize="18dp" />
+    </LinearLayout>
 
-</android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>

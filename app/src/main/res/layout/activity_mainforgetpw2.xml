@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,14 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Enetr new password :"
+        android:hint="Enetr new password :"
         android:textSize="18dp"
         android:padding="12dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Confirm password :"
+        android:hint="Confirm password :"
         android:textSize="18dp"
         android:padding="12dp"/>
 
@@ -31,4 +32,4 @@
         android:layout_marginLeft="280dp"
         android:textSize="18dp"/>
 
-</android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>

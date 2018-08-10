@@ -38,6 +38,7 @@ public class Mainlogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String Email = email.getText().toString();
+
                 String Password = password.getText().toString();
 
                 if(TextUtils.isEmpty(Email)){
