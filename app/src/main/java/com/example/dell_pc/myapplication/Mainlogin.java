@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Mainlogin extends AppCompatActivity {
 
     EditText email,password;
-    Button loginButton,signupButton;
+    Button loginButton,signupButton,Forgetpassbtn;
     FirebaseAuth firebaseAuth;
 
     @Override
@@ -26,11 +26,11 @@ public class Mainlogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainlogin);
 
-        email = (EditText) findViewById(R.id.Username);
+         email = (EditText) findViewById(R.id.Username);
         password = (EditText) findViewById(R.id.Password);
         loginButton = (Button) findViewById(R.id.Login);
         signupButton = (Button) findViewById(R.id.Signup);
-
+        Forgetpassbtn = (Button) findViewById(R.id.Forgetpassid);
         firebaseAuth = FirebaseAuth.getInstance();
 
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -38,7 +38,6 @@ public class Mainlogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String Email = email.getText().toString();
-
                 String Password = password.getText().toString();
 
                 if(TextUtils.isEmpty(Email)){
@@ -54,7 +53,7 @@ public class Mainlogin extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Password must be at least 6 characters",Toast.LENGTH_SHORT).show();
                 }
 
-                firebaseAuth.createUserWithEmailAndPassword(Email,Password)
+                firebaseAuth.signInWithEmailAndPassword(Email,Password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -77,10 +76,16 @@ public class Mainlogin extends AppCompatActivity {
             }
         });
 
-        if(firebaseAuth.getCurrentUser()!=null){
-            startActivity(new Intent(getApplicationContext(),Mainforgetpw.class));
+        Forgetpassbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Mainforgetpw.class));
+            }
+        });
 
-    }
+        if(firebaseAuth.getCurrentUser()!=null){
+            startActivity(new Intent(getApplicationContext(),Mainlogin.class));
+            }
     }
 }
 

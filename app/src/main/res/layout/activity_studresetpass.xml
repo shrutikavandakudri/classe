@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Studresetpass"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passid"
+        android:textSize="18dp"
+        android:hint="Enetr password :"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newpassid"
+        android:textSize="18dp"
+        android:hint="Enetr new password :"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/conformpassid"
+        android:textSize="18dp"
+        android:hint="Conform password :"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/submitid"
+        android:textSize="18dp"
+        android:text="Sbmit"
+        android:textColor="@color/colortext"
+        android:background="@color/colorbutton"/>
+
+</LinearLayout>

@@ -6,5 +6,6 @@
     <color name="colorcard">#a0dfd3</color>
     <color name="colorbutton">#FF9900</color>
     <color name="colortext">#FFF</color>
+    <color name="colorlink">#0000FF</color>
 
 </resources>

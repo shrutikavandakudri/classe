@@ -39,7 +39,7 @@ public class Mainqrscan extends AppCompatActivity {
         qrbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Mainaadardetails.class));
+                startActivity(new Intent(getApplicationContext(), Mainenterdetails.class));
             }
         });
 

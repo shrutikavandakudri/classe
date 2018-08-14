@@ -13,6 +13,7 @@
         android:layout_marginTop="50dp"
         android:textSize="18dp"
         android:text="Contact details"
+        android:id="@+id/contactid"
         android:background="@color/colorbutton"
         android:textColor="@color/colortext" />
 
@@ -23,6 +24,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:text="Reset password"
+        android:id="@+id/resetid"
         android:background="@color/colorbutton"
         android:textColor="@color/colortext"/>
 

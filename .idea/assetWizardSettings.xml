@@ -50,7 +50,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio10/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_assignment_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio10/plugins/android/lib/android.jar!/images/material_design_icons/av/ic_note_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -61,7 +61,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="outputName" value="ic_launcher_assignment" />
+                                      <entry key="outputName" value="ic_launcher_notes" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -33,13 +33,15 @@
         android:layout_marginTop="30dp"
         android:textSize="18dp"
         android:padding="12dp"
-        android:hint="Name :" />
+        android:id="@+id/classid"
+        android:hint="Class :" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textSize="18dp"
-        android:hint="Class :"
+        android:hint="Skills :"
+        android:id="@+id/skillsid"
         android:padding="12dp"/>
 
     <EditText
@@ -47,7 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textSize="18dp"
-        android:hint="Email :"
+        android:hint="Education :"
+        android:id="@+id/educationid"
         android:padding="12dp"/>
 
     <EditText
@@ -55,43 +58,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textSize="18dp"
-        android:hint="Phone :"
+        android:hint="Projects :"
+        android:id="@+id/projectid"
         android:padding="12dp"/>
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginTop="20dp">
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="190dp"
+        android:layout_marginLeft="160dp"
         android:layout_marginTop="20dp"
+        android:id="@+id/saveid"
         android:textSize="18dp"
         android:text="Save"
         android:textColor="@color/colortext"
         android:background="@color/colorbutton"/>
-
-    <Button
-        android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:text="Edit"
-        android:textSize="18dp"
-        android:background="@color/colorbutton"
-        android:textColor="@color/colortext"/>
-
-
-
-</LinearLayout>
-
-
-
-
-
-
 
 </LinearLayout>

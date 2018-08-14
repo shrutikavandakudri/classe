@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "237522964367",
-    "firebase_url": "https://class-e.firebaseio.com",
-    "project_id": "class-e",
-    "storage_bucket": "class-e.appspot.com"
+    "project_number": "709982338666",
+    "firebase_url": "https://classe-e87b7.firebaseio.com",
+    "project_id": "classe-e87b7",
+    "storage_bucket": "classe-e87b7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:237522964367:android:09f58de23f5ddee4",
+        "mobilesdk_app_id": "1:709982338666:android:09f58de23f5ddee4",
         "android_client_info": {
           "package_name": "com.example.dell_pc.myapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "237522964367-eeeili43ocib29076i9ibsk4iso902mi.apps.googleusercontent.com",
+          "client_id": "709982338666-k7elhu9h9p7tpldtu9ha5vdjaamr9tk5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD7SB8PxxjX3pgfb_Rev5QVTMg8kQuKAV0"
+          "current_key": "AIzaSyAEPOjPXql147lmE_ETnfnGJqD-NRrpVvQ"
         }
       ],
       "services": {

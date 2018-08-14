@@ -7,21 +7,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Mainsignup">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="Select student/faculty"
+        android:textSize="18dp"/>
 
     <RadioGroup
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:id="@+id/radioid">
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:text="Student"/>
+            android:layout_marginTop="10dp"
+            android:text="Student"
+            android:textSize="18dp"/>
         <RadioButton
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Faculty"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Faculty"
+            android:textSize="18dp"/>
 
     </RadioGroup>
 
@@ -30,25 +41,73 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:id="@+id/signupname"
-        android:hint="Name :"
+        android:id="@+id/firstname"
+        android:hint="First name :"
         android:textSize="18dp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:id="@+id/signuppass"
-        android:hint="Password :"
+        android:id="@+id/lastname"
+        android:hint="Last name :"
         android:textSize="18dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/e-mailid"
+        android:hint="E-mail :"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/phonenoid"
+        android:hint="Contact :"
+        android:textSize="18dp"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:text="Gender :"
+    android:textSize="18dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioid2">
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Male"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Female"
+            android:textSize="18dp"/>
+
+
+    </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="260dp"
-        android:text="Next step "
-        android:id="@+id/nextbutton"
+        android:text="Submit "
+        android:id="@+id/submitid"
         android:background="@color/colorbutton"
         android:textColor="@color/colortext"
         android:textSize="18dp"/>

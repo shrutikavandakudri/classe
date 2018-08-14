@@ -21,37 +21,15 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Studtoolbar extends AppCompatActivity {
-    ImageButton profileImage,notificationImage,settingImage;
+
     FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studtoolbar);
-        ImageButton profileImage=(ImageButton) findViewById(R.id.profile);
-        ImageButton notificationImage=(ImageButton) findViewById(R.id.notification);
-        ImageButton settingImage=(ImageButton) findViewById(R.id.setting);
+
         firebaseAuth=FirebaseAuth.getInstance();
 
-        profileImage.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Studprofile.class));
-            }
-
-        });
-
-        notificationImage.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Studnotification.class));
-            }
-        });
-
-        settingImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Studsetting.class));
-
-            }
-        });
     }
 }

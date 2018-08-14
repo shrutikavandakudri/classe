@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,36 +9,106 @@
     android:orientation="vertical"
     tools:context=".Studentpage">
 
-
-
-        <include layout="@layout/activity_studtoolbar"
+    <include layout="@layout/activity_studtoolbar"
         android:id="@+id/customtoolbar"/>
 
-   
-   <FrameLayout android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:id="@+id/studframe">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-       <ImageButton
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/assignmentid"
+            android:layout_marginTop="60dp"
+            android:background="@null"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/assignment2"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteid"
+            android:layout_marginTop="60dp"
+            android:background="@null"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/notes1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Assignment"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/assignmentImage"
-        android:layout_marginTop="50dp"
-           android:background="@null"
-        android:src="@mipmap/ic_launcher_assignment"
+        android:id="@+id/attendenceid"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/attendence2"/>
 
-           android:scaleType="fitXY"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/marksid"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/results2"/>
 
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_gravity="center"
-           android:layout_marginTop="25dp"
-           android:layout_marginRight="110dp"
-           android:clickable="false"
-           android:text="Assignment">
-       </TextView>
-   </FrameLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Attendence"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Grade book"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+
     </LinearLayout>
+
+
+</LinearLayout>
+
 
 

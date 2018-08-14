@@ -19,27 +19,33 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 
-public class Mainforgetpw extends AppCompatActivity {
+public class Studnotes extends AppCompatActivity {
 
-    Button resendcode;
-    EditText entercode;
+    String [] SPINNERLIST={"SCIENCE","SOCILA STUDIES","MATHEMATHICS","ENGLISH","HINDI","KANNADA"};
+
+    Button download;
     FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainforgetpw);
+        setContentView(R.layout.activity_studnotes);
 
-        entercode = (EditText) findViewById(R.id.entercodeid);
-         resendcode= (Button) findViewById(R.id.resendcodeid);
+        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line,SPINNERLIST);
+        MaterialBetterSpinner betterSpinner=(MaterialBetterSpinner) findViewById(R.id.subspinner);
+        betterSpinner.setAdapter(arrayAdapter);
+
+
+        download = (Button)  findViewById(R.id.downloadid);
         firebaseAuth = FirebaseAuth.getInstance();
 
-
-        resendcode.setOnClickListener(new View.OnClickListener() {
+        download.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Mainforgetpw.class));
+                startActivity(new Intent(getApplicationContext(), Studnotes.class));
             }
         });
+
     }
 }
