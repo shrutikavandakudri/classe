@@ -14,12 +14,16 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import android.util.Log;
+import android.widget.ProgressBar;
+
 
 public class Mainlogin extends AppCompatActivity {
 
     EditText email,password;
     Button loginButton,signupButton,Forgetpassbtn;
     FirebaseAuth firebaseAuth;
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,38 +35,45 @@ public class Mainlogin extends AppCompatActivity {
         loginButton = (Button) findViewById(R.id.Login);
         signupButton = (Button) findViewById(R.id.Signup);
         Forgetpassbtn = (Button) findViewById(R.id.Forgetpassid);
+        progressBar = (ProgressBar) findViewById(R.id.progressid);
         firebaseAuth = FirebaseAuth.getInstance();
 
         loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                String Email = email.getText().toString();
-                String Password = password.getText().toString();
+                String Email = email.getText().toString().trim();
+                String Password = password.getText().toString().trim();
 
-                if(TextUtils.isEmpty(Email)){
-                    Toast.makeText(getApplicationContext(),"Please fill in the required fields",Toast.LENGTH_SHORT).show();
+                if(TextUtils.isEmpty(Email) || TextUtils.isEmpty(Password)){
+                    Toast.makeText(getApplicationContext(),"Please fill in the required fields",Toast
+                            .LENGTH_SHORT).show();
                     return;
                 }
 
-                if(TextUtils.isEmpty(Password)){
-                    Toast.makeText(getApplicationContext(),"Please fill in the required fields",Toast.LENGTH_SHORT).show();
+                if(Password.length()<6){
+                    Toast.makeText(getApplicationContext(),"Password must be at least 6 characters",Toast
+                            .LENGTH_SHORT).show();
                 }
 
-                if(Password.length()<6){
-                    Toast.makeText(getApplicationContext(),"Password must be at least 6 characters",Toast.LENGTH_SHORT).show();
-                }
+                loginButton.setEnabled(false);
+                progressBar.setVisibility(View.VISIBLE);
+
 
                 firebaseAuth.signInWithEmailAndPassword(Email,Password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
+                                    progressBar.setVisibility(View.GONE);
                                     startActivity(new Intent(getApplicationContext(),Studentpage.class));
                                     finish();
                                 }
                                 else{
-                                    Toast.makeText(getApplicationContext(),"E-mail or password is wrong",Toast.LENGTH_SHORT).show();
+                                    progressBar.setVisibility(View.GONE);
+                                    loginButton.setEnabled(true);
+                                    Toast.makeText(getApplicationContext(),"E-mail or password is wrong",Toast
+                                            .LENGTH_SHORT).show();
                                 }
                             }
                         });

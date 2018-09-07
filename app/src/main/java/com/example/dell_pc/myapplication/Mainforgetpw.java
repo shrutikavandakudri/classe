@@ -21,7 +21,7 @@ import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 public class Mainforgetpw extends AppCompatActivity {
 
-    Button resendcode;
+    Button resendcode,nextbtn;
     EditText entercode;
     FirebaseAuth firebaseAuth;
 
@@ -32,6 +32,7 @@ public class Mainforgetpw extends AppCompatActivity {
 
         entercode = (EditText) findViewById(R.id.entercodeid);
          resendcode= (Button) findViewById(R.id.resendcodeid);
+         nextbtn = (Button) findViewById(R.id.nextbtnid);
         firebaseAuth = FirebaseAuth.getInstance();
 
 
@@ -39,6 +40,13 @@ public class Mainforgetpw extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Mainforgetpw.class));
+            }
+        });
+
+        nextbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Mainforgetpw2.class));
             }
         });
     }

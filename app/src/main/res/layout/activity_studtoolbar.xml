@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/ic_action_profile"
         android:id="@+id/profile"
         android:background="@null"
-        android:layout_marginLeft="200dp"/>
+        android:layout_marginLeft="180dp"/>
 
     <ImageButton
         android:layout_width="wrap_content"

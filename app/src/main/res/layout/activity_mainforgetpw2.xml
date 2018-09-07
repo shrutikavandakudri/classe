@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:hint="Enetr new password :"
+        android:id="@+id/newpass"
         android:textSize="18dp"
         android:padding="12dp"/>
     <EditText
@@ -19,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:hint="Confirm password :"
+        android:id="@+id/conformpass"
         android:textSize="18dp"
         android:padding="12dp"/>
 
@@ -27,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Submit"
+        android:id="@+id/passsubmitid"
         android:background="@color/colorbutton"
         android:textColor="@color/colortext"
         android:layout_marginLeft="280dp"

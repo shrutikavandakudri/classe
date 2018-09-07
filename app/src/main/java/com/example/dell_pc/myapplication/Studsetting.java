@@ -34,5 +34,19 @@ public class Studsetting extends AppCompatActivity {
         Contactbtn= (Button) findViewById(R.id.contactid);
         Resetpasswordbtn = (Button) findViewById(R.id.resetid);
         firebaseAuth = FirebaseAuth.getInstance();
+
+        Contactbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Studcontact.class));
+            }
+        });
+
+        Resetpasswordbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Studresetpass.class));
+            }
+        });
     }
 }
